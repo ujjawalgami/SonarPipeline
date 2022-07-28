@@ -1,9 +1,5 @@
 node {
-   stage('checkout tfrs-sample-sonar')
-   git url: 'https://github.com/ujjawalgami/SonarPipeline.git'
-
-   stage('change to working dir')
-   dir('tfrs-sample-project'){
+   
 
        stage('execute sonar') {
 
